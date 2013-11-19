@@ -1,0 +1,262 @@
+<!doctype html>
+
+<html>
+  <head>
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+
+
+
+    <title>Octoviz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">CSCI 444 - Project 4 - William Lyon</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <!--  <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="starter-template">
+	<br><br>
+        <h1>Brazil Nutz</h1>
+        <p class="lead">Visualizing the brazil nut effect in granular materials</p>
+
+      </div>
+
+    <ul id="myTab" class="nav nav-tabs">
+        
+	<li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
+	<li><a href="#hypothesis" data-toggle="tab">Hypothesis</a></li>
+	<li><a href="#bad_vis" data-toggle="tab">Bad Visual</a></li>
+	<li><a href="#good_vis" data-toggle="tab">Good Visual</a></li>
+	<li><a href="#vis_1" data-toggle="tab">Visual #1</a></li>
+        <li><a href="#vis_2" data-toggle="tab">Visual #2</a></li>
+	<li><a href="#vis_3" data-toggle="tab">Visual #3</a></li>
+	<li><a href="#vis_4" data-toggle="tab">Visual #4</a></li>
+	<li><a href="#analysis" data-toggle="tab">Analysis</a></li>
+  
+
+    </ul>
+      <div id="myTabContent" class="tab-content">
+      
+        <div class="tab-pane fade in active" id="overview">
+          <p>Project Overview</p>
+        </div>
+
+
+	<div class="tab-pane fade" id="hypothesis">
+        <br><p>Hypotheis overview</p>
+        <div class="panel panel-info">
+	    <div class="panel-heading">
+	      <h3 class="panel-title">Hypothesis</h3>
+	    </div>
+	    <div class="panel-body">
+	      <p>Developers who develop in certain languages only interact with other developers who focus on similar languages.</p>
+        </div>
+	  </div>
+
+	</div> <!-- /.tab-pane -->
+
+	<div class="tab-pane fade" id="bad_vis">
+      <p>Source: <a href="http://www.nanex.net/FlashCrash/OngoingResearch.html">Nanex High Frequency Trading Research Group</a></p>
+      <p><iframe width="420" height="315" src="//www.youtube.com/embed/mTqPaHO7G1U" frameborder="0" allowfullscreen></iframe></p>
+
+	  <div class="panel panel-danger">
+	    <div class="panel-heading">
+	      <h3 class="panel-title">Why this is a bad visual</h3>
+	    </div>
+	    <div class="panel-body">
+          <p>This visual shows quotes and trades across all exchanges for shares of The New York Times Company (NYSE: NYT) for a 50 millisecond period. The graphic is taken a bit out of context (this <a href="http://www.youtube.com/watch?v=mTqPaHO7G1U">page</a> contains additional commentary) but the point of the visual is to demonstrate that a great amount of bidding/trading occurs in New York (where the exchanges are located) in the amount of time that is takes (according to the speed of light) for information to reach Los Angeles. This is interesting, however the visual misses the opportunity to help the viewer visualize this geographically.</p>
+        </div>
+	  </div>
+
+	</div>
+
+
+	<div class="tab-pane fade" id="good_vis">
+	  
+      <br>Source: <a href="http://bost.ocks.org/mike/hive/" target="_blank">Hive Plot Software Dependency Example</a> (will open in new tab/window)
+	  <div class="panel panel-success">
+	    <div class="panel-heading">
+	      <h3 class="panel-title">Why this is a good visual</h3>
+	    </div>
+	    <div class="panel-body">
+	      <p>This is an example of a Hive Plot, a type of network data visualization that groups notes by type. Contrasted with a force directed layout, this method of assigning position to nodes, allows for information to be encoded in the x,y coordinates of the node.</p>
+        </div>
+	  </div>
+
+	</div> <!-- /.tab-pane -->
+
+	<div class="tab-pane fade" id="vis_1">
+	  <h3>Matrix Scatterplot</h3>
+      Source: <a href="http://developer.github.com/v3/activity/events/">Github Events API v3</a>
+	  <p><iframe style="border: 0px;" src="/matrix" height=1000 width=1000 scrolling="yes"></iframe></p>
+	  <div class="panel panel-primary">
+	    <div class="panel-heading">
+	      <h3 class="panel-title">About Visual #1</h3>
+	    </div>
+	    <div class="panel-body">
+	        <p>About Visual 1</p>
+        </div>
+	  </div>
+	</div> <!-- /.tab-pane -->
+  
+        <div class="tab-pane fade" id="vis_2">
+        
+	  <h3>Boxplot 1</h3>
+	   Source: <a href="http://developer.github.com/v3">Githup API v3</a>
+        <figure>
+         <img src="/img/box1.png" width=500/>
+          <figcaption>This frequency plot shows that most nodes have only 1 edge, while only a small number of nodes have many edges.</figcaption>
+        </figure>
+
+       
+	  <div class="panel panel-primary">
+	    <div class="panel-heading">
+	      <h3 class="panel-title">About Visual #2</h3>
+	    </div>
+	    <div class="panel-body">
+	        <p>About visual 2</p>
+        </div>
+	  </div> 
+
+	</div> <!-- / .tab-pane -->
+
+	<div class="tab-pane fade" id="vis_3">
+	  <h3>Boxplot 2</h3>
+      Source: <a href="http://developer.github.com/v3">Githup API v3</a>
+      
+      <br>
+      <figure>
+         <img src="/img/box2.png" width=500/>
+          <figcaption>This frequency plot shows that most nodes have only 1 edge, while only a small number of nodes have many edges.</figcaption>
+        </figure>
+
+        
+      
+      <div class="panel panel-primary">
+	    <div class="panel-heading">
+	      <h3 class="panel-title">About Visual #3</h3>
+	    </div>
+	    <div class="panel-body">
+            <p>About visual 3</p>
+        </div>
+	  </div>
+
+	</div> <!-- /.tab-pane -->
+
+	<div class="tab-pane fade" id="vis_4">
+	   <h3>Side by side histograms</h3>
+        Source: <a href="http://developer.github.com/v3">Githup API v3</a>
+        <figure>
+         <img src="/img/hist1.png" width=500/>
+          <figcaption>This framesetequency plot shows that most nodes have only 1 edge, while only a small number of nodes have many edges.</figcaption>
+        </figure>
+
+        <figure>
+         <img src="/img/hist2.png" width=500/>
+          <figcaption>This frequency plot shows that most nodes have only 1 edge, while only a small number of nodes have many edges.</figcaption>
+        </figure>
+
+	  <div class="panel panel-primary">
+	    <div class="panel-heading">
+	      <h3 class="panel-title">About Visual #4</h3>
+	    </div>
+	    <div class="panel-body">
+            <p>About visual 4</p>
+            <ul>
+                <li>KDE</li>
+                <li>Algorithm for optimal number of bins</li>
+                <li>Draw line at average y force for brazil nuts</li>
+            </ul>
+        </div>
+	  </div>
+
+	</div> <!-- /.tab-pane -->
+
+    
+
+
+
+	<div class="tab-pane fade" id="analysis">
+	   <h3>Analysis And Conclusions</h3>
+       <h4>Power Law Analysis</h4>
+       <p>A power law function expresses the value of a variable in terms of the power (exponent) of another variable. In this case we explore the power law relationship of the distribution of degree of the nodes in our graph. In other words, we look for evidence that the frequency of the number of edges per node follows a power law.  </p>
+        <h5>Plots</h5>
+        <figure>
+         <img src="/img/freq.png" width=500/>
+          <figcaption>This frequency plot shows that most nodes have only 1 edge, while only a small number of nodes have many edges.</figcaption>
+        </figure>
+
+        <p><table border="1" style="float: right;">
+          <caption>Regression Analysis: log(Number Edges) vs log(Frequency)</caption>
+          <tr><th colspan=2>Regression Summary Stats</th></tr>
+		  <tr>
+		    <td><b>p-value:</b></td>
+		    <td>0.0003</td>
+		  </tr>
+		  <tr>
+		    <td><b>r^2:</b></td>
+		    <td>0.5867</td>
+		  </tr>
+		  <tr>
+		    <td><b>Slope: </b></td>
+		    <td>-0.7604</td>
+		  </tr>
+		  <tr>
+		    <td><b>Intercept: </b></td>
+		    <td>4.6761</td>
+		  </tr>
+	      </table>
+        <h5>Conclusions</h5>
+        <p>In terms of the power law distribution, this analysis shows that many repositories are starred by one user (in our sample) and few repositories are starred by multiple users. This makes sense in the context of our data, but it would also be interesting to include <strong>all</strong> stars per repository and not just the stars of users in our sample. This would be a more consistent comparison with the standard popularity power law function.</p>
+      <h4>Conclusions</h4>
+      <p>Most of the evidence presented in the visualizations appears to be inconsistent with our hypothesis. Rather than ego-type network patterns, with many developers focused around one or two languages, we observed many developers using many different languages.  Further analysis could be done to examine the hypothesis: 
+      <ul>
+        <li>Edges could be weighted according to number of contributions in a specific language</li>
+        <li>Data on more users could be collected to extend the dataset</li>
+        <li>Data on more user interactions (contributions, following, pull requests, forking, branching, etc ) all with different edge weights according to their relative significance would be particularly imformative</li>
+
+    </ul>
+
+        </p>
+	</div>
+      </div> <!-- /.tab-content-->
+
+    </div><!-- /.container -->
+    
+  </body>
+</html>

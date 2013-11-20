@@ -11,7 +11,9 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 
@@ -139,7 +141,7 @@
 	  <h3>Boxplot 1</h3>
 	   Source: <a href="http://developer.github.com/v3">Githup API v3</a>
         <figure>
-         <img src="/img/box1.png" width=500/>
+         <img src="/img/boxplot_2.png" width=1000/>
           <figcaption>This frequency plot shows that most nodes have only 1 edge, while only a small number of nodes have many edges.</figcaption>
         </figure>
 
@@ -161,7 +163,7 @@
       
       <br>
       <figure>
-         <img src="/img/box2.png" width=500/>
+         <img src="/img/boxplot2_1.png" width=1000/>
           <figcaption>This frequency plot shows that most nodes have only 1 edge, while only a small number of nodes have many edges.</figcaption>
         </figure>
 
@@ -182,12 +184,12 @@
 	   <h3>Side by side histograms</h3>
         Source: <a href="http://developer.github.com/v3">Githup API v3</a>
         <figure>
-         <img src="/img/hist1.png" width=500/>
+         <img src="/img/hist_30.png" width=1000/>
           <figcaption>This framesetequency plot shows that most nodes have only 1 edge, while only a small number of nodes have many edges.</figcaption>
         </figure>
 
         <figure>
-         <img src="/img/hist2.png" width=500/>
+         <img src="/img/hist_doanes.png" width=1000/>
           <figcaption>This frequency plot shows that most nodes have only 1 edge, while only a small number of nodes have many edges.</figcaption>
         </figure>
 
@@ -198,8 +200,8 @@
 	    <div class="panel-body">
             <p>About visual 4</p>
             <ul>
-                <li>KDE</li>
-                <li>Algorithm for optimal number of bins</li>
+                <li>KDE \(\hat{f}_h(x) = \frac{1}{n}\sum_{i=1}^n K_h (x - x_i) \quad = \frac{1}{nh} \sum_{i=1}^n K\Big(\frac{x-x_i}{h}\Big) \) </li>
+                <li>Algorithm for optimal number of bins \(k = 1 + \log_2( n ) + \log_2 \left( 1 +  \frac { |g_1| }{\sigma_{g_1}} \right) \) where \(\sigma_{g_1} = \sqrt { \frac { 6(n-2) }{ (n+1)(n+3) } } \)</li>
                 <li>Draw line at average y force for brazil nuts</li>
             </ul>
         </div>

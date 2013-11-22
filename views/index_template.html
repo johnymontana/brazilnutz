@@ -17,7 +17,7 @@
 
 
 
-    <title>Octoviz</title>
+    <title>BrazilNutz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
 
@@ -37,7 +37,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">CSCI 444 - Project 4 - William Lyon</a>
+          <a class="navbar-brand" href="#">CSCI 444 - Project 5 - William Lyon</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -54,7 +54,7 @@
       <div class="starter-template">
 	<br><br>
         <h1>Brazil Nutz</h1>
-        <p class="lead">Visualizing the brazil nut effect in granular materials</p>
+        <p class="lead">Visualizing the Brazil nut effect in granular materials</p>
 
       </div>
 
@@ -65,43 +65,86 @@
 	<li><a href="#bad_vis" data-toggle="tab">Bad Visual</a></li>
 	<li><a href="#good_vis" data-toggle="tab">Good Visual</a></li>
 	<li><a href="#vis_1" data-toggle="tab">Visual #1</a></li>
-        <li><a href="#vis_2" data-toggle="tab">Visual #2</a></li>
+    <li><a href="#vis_2" data-toggle="tab">Visual #2</a></li>
 	<li><a href="#vis_3" data-toggle="tab">Visual #3</a></li>
 	<li><a href="#vis_4" data-toggle="tab">Visual #4</a></li>
-	<li><a href="#analysis" data-toggle="tab">Analysis</a></li>
-  
-
     </ul>
       <div id="myTabContent" class="tab-content">
       
         <div class="tab-pane fade in active" id="overview">
-          <p>Project Overview</p>
+          <p>This project deals with visualizing the output of a granular materials particle simulation. Granular materials are interesting due to some unexpected phenomena that can be observed in the physical world and also in simulations. This includes the angle of repose, fore chains, and the Brazil nut effect, where particles of larger mass rise to the top of a collection of particles while the smaller particle appear to sink to the bottom. It is this Brazil nut effect that we will concern ourselves with in this project. We will consider the output of a simulation of 150 particles, 5 of which have a radius 3 times the radius of the other particles. This simulation is run for 2000 timesteps at a dt of 0.1. The output at that point is then used for the following visuals and analysis.</p>
+          
+          
+          <p><table border="1" style="float: right;">
+          <caption>Granular Materials Simulation Parameters</caption>
+		  <tr>
+		    <td><b>Gravity</b></td>
+		    <td>0.55</td>
+		  </tr>
+		  <tr>
+		    <td><b>Energy dissipation</b></td>
+		    <td>0.3</td>
+		  </tr>
+		  <tr>
+		    <td><b>Elastic bounce</b></td>
+		    <td>1.5</td>
+		  </tr>
+		  <tr>
+		    <td><b>Total particles</b></td>
+		    <td>150</td>
+		  </tr>
+          <tr>
+            <td><b>Number of Brazil nut particles</b></td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td><b>Radius of normal particles</b></td>
+            <td>1.0</td>
+          </tr>
+          <tr>
+            <td><b>Radius of Brazil nut particles</b></td>
+            <td>3.0</td>
+          </tr>
+          <tr>
+              <td><b>Number of time steps</b></td>
+              <td>2000</td>
+          </tr>
+          <tr>
+              <td><b>dt</b></td>
+              <td>0.1</td>
+              </tr>
+	      </table>
+          </p>
+
         </div>
 
 
 	<div class="tab-pane fade" id="hypothesis">
-        <br><p>Hypotheis overview</p>
+        <br><br>
         <div class="panel panel-info">
 	    <div class="panel-heading">
 	      <h3 class="panel-title">Hypothesis</h3>
 	    </div>
 	    <div class="panel-body">
-	      <p>Developers who develop in certain languages only interact with other developers who focus on similar languages.</p>
+            <p>Particles of larger radius will move to the top of the pile in this simulation.</p>
         </div>
 	  </div>
 
 	</div> <!-- /.tab-pane -->
 
 	<div class="tab-pane fade" id="bad_vis">
-      <p>Source: <a href="http://www.nanex.net/FlashCrash/OngoingResearch.html">Nanex High Frequency Trading Research Group</a></p>
-      <p><iframe width="420" height="315" src="//www.youtube.com/embed/mTqPaHO7G1U" frameborder="0" allowfullscreen></iframe></p>
+      <p>Source: <a href="http://www-n.oca.eu/chiavassa">here</a></p>
 
+      <figure>
+        <img src="https://www-n.oca.eu/chiavassa/immagini/procyon.jpg" width="900"/>
+        <figcaption>Results of some sort of physics simulation, but what exactly are we looking at?</figcaption>
+      </figure>
 	  <div class="panel panel-danger">
 	    <div class="panel-heading">
 	      <h3 class="panel-title">Why this is a bad visual</h3>
 	    </div>
 	    <div class="panel-body">
-          <p>This visual shows quotes and trades across all exchanges for shares of The New York Times Company (NYSE: NYT) for a 50 millisecond period. The graphic is taken a bit out of context (this <a href="http://www.youtube.com/watch?v=mTqPaHO7G1U">page</a> contains additional commentary) but the point of the visual is to demonstrate that a great amount of bidding/trading occurs in New York (where the exchanges are located) in the amount of time that is takes (according to the speed of light) for information to reach Los Angeles. This is interesting, however the visual misses the opportunity to help the viewer visualize this geographically.</p>
+            <p>This visual shows the result of a physics simulation of some kind, I believe something related to astrophysics. I find the use of color particularly troubling. It's not clear to me what color is measuring (temperature, perhaps?), but more disturbing is the apparent color distortion at the edges of the circle. The coloring is more intense at the edges, but it is not clear if that is due to denser data values or if it due to some sort of 3D effect. </p>
         </div>
 	  </div>
 
@@ -110,13 +153,18 @@
 
 	<div class="tab-pane fade" id="good_vis">
 	  
-      <br>Source: <a href="http://bost.ocks.org/mike/hive/" target="_blank">Hive Plot Software Dependency Example</a> (will open in new tab/window)
-	  <div class="panel panel-success">
+        <br><br>
+      <iframe width="560" height="315" src="//www.youtube.com/embed/o4nUsNPXuAs" frameborder="0" allowfullscreen></iframe>
+      <br><hr>
+      <iframe width="420" height="315" src="//www.youtube.com/embed/r2sUPDzDVmQ" frameborder="0" allowfullscreen></iframe>
+      <br><hr>
+      <div class="panel panel-success">
 	    <div class="panel-heading">
 	      <h3 class="panel-title">Why this is a good visual</h3>
 	    </div>
 	    <div class="panel-body">
-	      <p>This is an example of a Hive Plot, a type of network data visualization that groups notes by type. Contrasted with a force directed layout, this method of assigning position to nodes, allows for information to be encoded in the x,y coordinates of the node.</p>
+            <p>These two videos show granular materials simulations, both created with the <a href="http://cfdem.dcs-computing.com/?q=OpenSourceDEM">LIGGGHTS discrete element particle simulation software tool.</a> The first video shows how force chains among the particles change as a flat bar is dropped onto the pile of particles. The level of force is colored to indicate stronger chains.   </p>
+            <p>The second video simulates the angle of repose in granular materials. A pile of particles is dropped into a container below and a pyramid shaped pile forms. The angle of this pile is the angle of repose. This video makes another good use of color, by encoding the velocity of each particle using a color scale.</p>
         </div>
 	  </div>
 
@@ -124,25 +172,25 @@
 
 	<div class="tab-pane fade" id="vis_1">
 	  <h3>Matrix Scatterplot</h3>
-      Source: <a href="http://developer.github.com/v3/activity/events/">Github Events API v3</a>
 	  <p><iframe style="border: 0px;" src="/matrix" height=1000 width=1000 scrolling="yes"></iframe></p>
 	  <div class="panel panel-primary">
 	    <div class="panel-heading">
 	      <h3 class="panel-title">About Visual #1</h3>
 	    </div>
 	    <div class="panel-body">
-	        <p>About Visual 1</p>
+	        <p>Visual #1 is a matrix scatterplot of the simulation output after 2000 timesteps. A total of six dimensions are shown: the x, y, and z positions of the particles, particle radius, particle velocity in the y direction and particle acceleration in the y direction. Each cell in the matrix is a pair-wise scatter plot, representing a total of 36 pair-wise scatter plots. </p>
+            <p>By examining the radius vs. y position cell, we can see that the Brazil nut particles (those with larger radius) are distributed toward the upper section of the y position distribution. This is evidence consistent with our hypothesis: the Brazil nut particles have moved to the top of the particle pile. </p>
+            <p>For further analysis we can select the Bazil nuts by dragging the brushing over the observations at the extreme positive end of the radius vs. radius cell. This will highlight only the Brazil nut particles in all the cells, allowing us to see how they are distributed in any of the pair-wise scatter plots. For example we can see how the Brazil nuts are distributed on an x/y grid by considering the x vs y cell.</p>
         </div>
 	  </div>
 	</div> <!-- /.tab-pane -->
   
         <div class="tab-pane fade" id="vis_2">
         
-	  <h3>Boxplot 1</h3>
-	   Source: <a href="http://developer.github.com/v3">Githup API v3</a>
+	  <h3>Boxplot comparing y position of particles grouped by radius</h3>
         <figure>
          <img src="/img/boxplot_2.png" width=1000/>
-          <figcaption>This frequency plot shows that most nodes have only 1 edge, while only a small number of nodes have many edges.</figcaption>
+          <figcaption>This boxplot clearly shows that Brazil nut particles are on average positioned above the other particles. </figcaption>
         </figure>
 
        
@@ -151,59 +199,68 @@
 	      <h3 class="panel-title">About Visual #2</h3>
 	    </div>
 	    <div class="panel-body">
-	        <p>About visual 2</p>
+	        <p>The above box and whisker plot compares the y position of Brazil nut particles to the other homogeneously sized particles. We can clearly see that - excluding outliers - the Brazil nut particles are positioned above the smaller particles, which is consistent with out hypothesis.  </p>
+            <p>In addition to the standard box plot showing median, the inter-quartile range with whiskers extending to cover 1.5 standard deviations of the data and a + marking outliers, this visual includes a mark for each observation at its y value. A random perturbation in the x direction is applied to each observation to better deal with clustering. This further helps to accentuate the distribution of the data.</p>
         </div>
 	  </div> 
 
 	</div> <!-- / .tab-pane -->
 
-	<div class="tab-pane fade" id="vis_3">
-	  <h3>Boxplot 2</h3>
-      Source: <a href="http://developer.github.com/v3">Githup API v3</a>
+	<div class="tab-pane fade" id="vis_4">
+	  <h3>Boxplot comparing forces in y direction grouped by radius</h3>
       
       <br>
-      <figure>
          <img src="/img/boxplot2_1.png" width=1000/>
-          <figcaption>This frequency plot shows that most nodes have only 1 edge, while only a small number of nodes have many edges.</figcaption>
-        </figure>
-
+        <br><hr><br>
         
       
       <div class="panel panel-primary">
 	    <div class="panel-heading">
-	      <h3 class="panel-title">About Visual #3</h3>
+	      <h3 class="panel-title">About Visual #4</h3>
 	    </div>
 	    <div class="panel-body">
-            <p>About visual 3</p>
+            <p>By comparing the distribution of forces between Brazil nut particles and smaller particles we can see Brazil nut particles tightly centered around zero. This implies that the y position of the Brazil nut particles is relatively stable: once the larger particles has risen to the top of the pile they will remain at the top.</p>
         </div>
 	  </div>
 
 	</div> <!-- /.tab-pane -->
 
-	<div class="tab-pane fade" id="vis_4">
-	   <h3>Side by side histograms</h3>
-        Source: <a href="http://developer.github.com/v3">Githup API v3</a>
+	<div class="tab-pane fade" id="vis_3">
+	   <h3>Histograms showing distribution of forces on particles in y direction</h3>
         <figure>
          <img src="/img/hist_30.png" width=1000/>
-          <figcaption>This framesetequency plot shows that most nodes have only 1 edge, while only a small number of nodes have many edges.</figcaption>
+          <figcaption>Histogram and kernel density estimation plot with 30 bins</figcaption>
         </figure>
 
         <figure>
          <img src="/img/hist_doanes.png" width=1000/>
-          <figcaption>This frequency plot shows that most nodes have only 1 edge, while only a small number of nodes have many edges.</figcaption>
+          <figcaption>Histogram and kernel density estimation plot with number of bins suggested by Doanes formula (9 bins)</figcaption>
         </figure>
 
 	  <div class="panel panel-primary">
 	    <div class="panel-heading">
-	      <h3 class="panel-title">About Visual #4</h3>
+	      <h3 class="panel-title">About Visual #3</h3>
 	    </div>
 	    <div class="panel-body">
-            <p>About visual 4</p>
-            <ul>
-                <li>KDE \(\hat{f}_h(x) = \frac{1}{n}\sum_{i=1}^n K_h (x - x_i) \quad = \frac{1}{nh} \sum_{i=1}^n K\Big(\frac{x-x_i}{h}\Big) \) </li>
-                <li>Algorithm for optimal number of bins \(k = 1 + \log_2( n ) + \log_2 \left( 1 +  \frac { |g_1| }{\sigma_{g_1}} \right) \) where \(\sigma_{g_1} = \sqrt { \frac { 6(n-2) }{ (n+1)(n+3) } } \)</li>
-                <li>Draw line at average y force for brazil nuts</li>
-            </ul>
+            These two histograms show the distribution of the forces in the y direction on the particles in this simulation. 
+            
+            <h3>Doanes Formula for Optimal Number Of Bins</h3>
+            <p>The Doanes formula provides a suggestion for the optimal number of bins to use for a histogram. This is a modification of the Sturges formula which only takes into account the number of observations. The Doanes formula also takes into account the kurtosis or skewness of the data.
+            \(k = 1 + \log_2( n ) + \log_2 \left( 1 +  \frac { |g_1| }{\sigma_{g_1}} \right) \) where \(\sigma_{g_1} = \sqrt { \frac { 6(n-2) }{ (n+1)(n+3) } } \)</li>
+            <br>
+            Python code:
+            <pre>
+                sturges = lambda n: int(log2(n) +1)
+                doanes = lambda data: int(1 + log(len(data)) + log(1 + kurtosis(data) * (len(data) / 6.) ** 0.5))
+            </pre>
+            </p>
+            <p>It is interesting to note that the histogram which uses the Doanes formula for the number of bins has rather low data-density.</p>
+            <h3>Kernel Density Estimation</h3>
+            A KDE is a way to estimate the probability density function given a sample of observations. A plot of the KDE along with a histogram can help better explain the distribution of data. The general formula is given below:<br>
+            <p>\(\hat{f}_h(x) = \frac{1}{n}\sum_{i=1}^n K_h (x - x_i) \quad = \frac{1}{nh} \sum_{i=1}^n K\Big(\frac{x-x_i}{h}\Big) \) </p>
+            <p>where \(K()\) is the kernel function, a function that integrates to one, typically a uniform or normal function. And \(h\) is a smoothing parameter.</p>
+        
+        
         </div>
 	  </div>
 
